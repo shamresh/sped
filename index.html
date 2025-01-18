@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astra Chat Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="token-input-container">
+            <input type="password" id="applicationToken" placeholder="Enter Application Token">
+            <button onclick="saveToken()">Save Token</button>
+        </div>
+        <div id="chat-messages" class="chat-messages"></div>
+        <div class="chat-input-container">
+            <input type="text" id="userInput" placeholder="Type your message...">
+            <button onclick="handleChatSubmission()">Send</button>
+        </div>
+    </div>
+    <script src="config.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>
